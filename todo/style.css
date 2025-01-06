@@ -1,0 +1,134 @@
+body {
+    background-color: rgba(74, 72, 72, 0.776);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: progress;
+}
+
+#inputfield {
+    border-radius: 10px;
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5rem;
+    color: rgba(243, 65, 65, 0.806);
+    background-color: rgba(93, 79, 81, 0.854);
+    animation: value 2s linear infinite;
+    transition: 2s;
+}
+
+#inputfield:hover {
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+@keyframes value {
+    0% {
+        color: rgba(189, 239, 63);
+    }
+
+    20% {
+        color: rgba(46, 236, 236);
+    }
+
+    40% {
+        color: rgba(44, 76, 237);
+    }
+
+    60% {
+        color: rgba(191, 52, 229);
+    }
+
+    80% {
+        color: rgba(53, 220, 48);
+    }
+
+    100% {
+        color: rgba(58, 227, 187);
+    }
+}
+
+.button {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 10px;
+    color: rgb(239, 102, 171);
+    background-color: rgb(102, 71, 224);
+    transition: 2s;
+}
+
+.button:hover {
+    background-color: rgb(130, 110, 210);
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    width: 10.1rem;
+    height: 3.1rem;
+}
+
+.todoListElem {
+    font-size: 1.5rem;
+    animation: todoList 2s linear infinite;
+}
+
+@keyframes todoList {
+    0% {
+        color: rgba(189, 239, 63);
+    }
+
+    20% {
+        color: rgba(46, 236, 236);
+    }
+
+    40% {
+        color: rgba(44, 76, 237);
+    }
+
+    60% {
+        color: rgba(191, 52, 229);
+    }
+
+    80% {
+        color: rgba(53, 220, 48);
+    }
+
+    100% {
+        color: rgba(58, 227, 187);
+    }
+
+}
+
+.todoListElem:hover {
+    cursor: default;
+}
+
+@media (max-width:340px) {
+    h1 {
+        margin-left: 1.5rem;
+    }
+
+    #inputfield {
+        width: 15rem;
+        height: 1.5rem;
+    }
+
+    .button {
+        width: 8rem;
+    }
+}
